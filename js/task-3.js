@@ -1,3 +1,6 @@
+'use strict';
+
+
 function checkForSpam(message) {
   let sms;
   const messageToLow = message.toLowerCase();

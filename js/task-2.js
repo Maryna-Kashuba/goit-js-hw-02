@@ -1,3 +1,6 @@
+'use strict';
+
+
 function formatMessage(message, maxLength) {
    let back;
 
