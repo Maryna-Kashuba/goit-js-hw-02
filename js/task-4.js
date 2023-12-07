@@ -1,8 +1,6 @@
 function getShippingCost(country) {
     let message;
 
-
-
     const China = 100;
     const Chile = 250;
     const Australia = 170;
