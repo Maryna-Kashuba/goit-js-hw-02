@@ -7,7 +7,7 @@ function makeTransaction(quantity, pricePerDroid, customerCredits) {
     if (totalPrice > customerCredits) {
         message = "Insufficient funds!"
     } else {
-        message= `You ordered ${quantity} droids worth ${totalPrice} credits!`;
+        message = `You ordered ${quantity} droids worth ${totalPrice} credits!`;
     }
     return message;
 }

@@ -2,14 +2,10 @@
 
 
 function formatMessage(message, maxLength) {
-   let back;
 
-    if (message.lenght <= maxLength) {
-      back=message;
-    } else {
-       back=message.slice(0, maxLength) + `...`;
-    }
-    return back;
+    if (message.length <= maxLength) {
+     return message;
+    }  return message.slice(0, maxLength - 3) + "...";
 }
 
 
@@ -19,3 +15,10 @@ console.log(formatMessage("Vestibulum facilisis purus nec", 20)); // "Vestibulum
 console.log(formatMessage("Vestibulum facilisis purus nec", 30)); // "Vestibulum facilisis purus nec"
 console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 15)); // "Nunc sed turpis..."
 console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 41)); // "Nunc sed turpis a felis in nunc fringilla"
+
+// Оголоси функцію formatMessage(message, maxLength), яка приймає рядок (параметр message) та перевіряє його довжину відповідно до заданої максимальної довжини (параметр maxLength).
+
+// Доповни код функції таким чином, що:
+
+// Якщо довжина рядка дорівнює або менша за maxLength, то функція повертає початковий рядок без змін.
+// Якщо довжина перевищує maxLength, то функція обрізає рядок до maxLength символів, додає трикрапку "..." в кінці та повертає обрізану версію.
